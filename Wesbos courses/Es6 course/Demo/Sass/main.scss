@@ -1,0 +1,39 @@
+.cs-dropdown {
+    width: 200px;
+    margin: 0;
+    position: relative;
+    &-button {
+        display: inline-block;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    &-menu {
+        position: absolute;
+        border: 1px solid #000;
+        width: 100%;
+        border-radius: 4px;
+        transform: translate3d(0, -16px, 0);
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        bottom: calc(-100% - 48px);
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+            padding: 4px 8px;
+        }
+    }
+    &.open {
+        .cs-dropdown-menu {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

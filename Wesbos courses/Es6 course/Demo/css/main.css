@@ -1,0 +1,47 @@
+.cs-dropdown {
+  width: 200px;
+  margin: 0;
+  position: relative;
+}
+
+.cs-dropdown-button {
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cs-dropdown-menu {
+  position: absolute;
+  border: 1px solid #000;
+  width: 100%;
+  border-radius: 4px;
+  -webkit-transform: translate3d(0, -16px, 0);
+          transform: translate3d(0, -16px, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  bottom: calc(-100% - 48px);
+}
+
+.cs-dropdown-menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.cs-dropdown-menu li {
+  list-style: none;
+  padding: 4px 8px;
+}
+
+.cs-dropdown.open .cs-dropdown-menu {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+/*# sourceMappingURL=main.css.map */
