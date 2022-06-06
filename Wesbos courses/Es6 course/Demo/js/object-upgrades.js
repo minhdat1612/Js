@@ -34,7 +34,12 @@ const tShirt={
     [key]:value,
     [`${key}Opposite`]:invertColor(value)
 }
-const keys=['size','color','weight'];
-const values=['medium','red',100];
 
 console.log(tShirt);
+
+const keys=['size','color','weight'];
+const values=['medium','red',100];
+const shirt={
+    [key.shirt()]:value.shirt(),
+}
+
